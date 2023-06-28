@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane fx:id="root" prefHeight="745.0" prefWidth="1224.0">
+      <children>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" height="745.0" layoutX="-18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1270.0">
+            <fill>
+               <RadialGradient centerX="0.5332409972299169" centerY="0.46199524940617576" radius="0.5">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="1.0" green="1.0" blue="1.0" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.1006711409395973">
+                        <color>
+                           <Color red="1.0" green="1.0" blue="1.0" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.40789473056793213" green="0.7105262875556946" blue="0.6802631616592407" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </RadialGradient>
+            </fill>
+         </Rectangle>
+         <Label layoutX="173.0" layoutY="125.0" prefHeight="89.0" prefWidth="960.0" text="The Bullet Journal Controller!" textFill="#fff714">
+            <font>
+               <Font name="Impact" size="72.0" />
+            </font>
+         </Label>
+         <Text layoutX="727.0" layoutY="658.0" opacity="0.49" rotate="-14.6" strokeType="OUTSIDE" strokeWidth="0.0" text="Graphic design is my passion :D">
+            <font>
+               <Font name="Comic Sans MS" size="36.0" />
+            </font>
+            <fill>
+               <LinearGradient endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="1.0" green="0.0833333358168602" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.006711409395973154">
+                        <color>
+                           <Color red="1.0" green="0.0833333358168602" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.18456375838926173">
+                        <color>
+                           <Color red="1.0" green="0.9666666388511658" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.399390243902439">
+                        <color>
+                           <Color green="1.0" blue="0.09856915473937988" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.5829513832051071">
+                        <color>
+                           <Color green="0.4324324429035187" blue="1.0" />
+                        </color>
+                     </Stop>
+                     <Stop offset="0.850609756097561">
+                        <color>
+                           <Color red="0.9602543711662292" blue="1.0" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.9602543711662292" blue="1.0" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </fill>
+         </Text>
+         <Text fill="WHITE" fontSmoothingType="LCD" layoutX="389.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="welcome to">
+            <font>
+               <Font name="Comic Sans MS Bold" size="36.0" />
+            </font>
+         </Text>
+         <Button fx:id="startButton" layoutX="738.0" layoutY="291.0" mnemonicParsing="false" prefHeight="226.0" prefWidth="75.0" text="Button">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+         <Text layoutX="557.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press me to get started!   ---&gt; " />
+      </children></AnchorPane>
+   <fill>
+      <RadialGradient centerX="0.5664819944598338" centerY="0.5" radius="0.5">
+         <stops>
+            <Stop>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </Stop>
+            <Stop offset="0.1006711409395973">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </Stop>
+            <Stop offset="1.0">
+               <color>
+                  <Color />
+               </color>
+            </Stop>
+         </stops>
+      </RadialGradient>
+   </fill>
+</Scene>

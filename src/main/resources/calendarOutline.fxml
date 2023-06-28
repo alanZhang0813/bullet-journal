@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <AnchorPane fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="518.0" prefWidth="821.0" VBox.vgrow="ALWAYS">
+                <children>
+                    <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="745.0" prefWidth="1258.0">
+                        <children>
+                            <HBox fx:id="weekView" layoutX="49.0" layoutY="130.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="346.0" prefWidth="889.0">
+                                <children>
+                                    <Pane fx:id="sunday" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="284.0" prefWidth="180.0">
+                                        <children>
+                                            <ListView fx:id="sundayList" layoutX="-11.0" layoutY="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="326.0" prefWidth="119.0" />
+                                            <Label fx:id="sundayLabel" layoutX="18.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Sunday" textFill="#a8a4a4">
+                                                <font>
+                                                    <Font name="American Typewriter" size="18.0" />
+                                                </font>
+                                            </Label>
+                                 <ProgressBar fx:id="sundayBar" layoutX="-12.0" layoutY="350.0" prefHeight="10.0" prefWidth="120.0" progress="0.0" />
+                                        </children>
+                                    </Pane>
+                                    <Pane fx:id="monday" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0">
+                                        <children>
+                                 <ProgressBar fx:id="mondayBar" layoutX="4.0" layoutY="350.0" prefHeight="10.0" prefWidth="120.0" progress="0.0" />
+                                            <ListView fx:id="mondayList" layoutX="4.0" layoutY="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="326.0" prefWidth="120.0" />
+                                            <Label fx:id="mondayLabel" layoutX="25.0" layoutY="3.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Monday" textFill="#a8a4a4">
+                                                <font>
+                                                    <Font name="American Typewriter" size="18.0" />
+                                                </font>
+                                            </Label>
+                                        </children>
+                                        <opaqueInsets>
+                                            <Insets />
+                                        </opaqueInsets>
+                                    </Pane>
+                                    <Pane fx:id="tuesday" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0">
+                                        <children>
+                                            <ListView fx:id="tuesdayList" layoutY="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="326.0" prefWidth="124.0" />
+                                            <Label fx:id="tuesdayLabel" layoutX="22.0" layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Tuesday" textFill="#a8a4a4">
+                                                <font>
+                                                    <Font name="American Typewriter" size="18.0" />
+                                                </font>
+                                            </Label>
+                                 <ProgressBar fx:id="tuesdayBar" layoutY="350.0" prefHeight="10.0" prefWidth="124.0" progress="0.0" />
+                                        </children>
+                                    </Pane>
+                                    <Pane fx:id="wednesday" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0">
+                                        <children>
+                                            <ListView fx:id="wednesdayList" layoutX="-1.0" layoutY="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="326.0" prefWidth="126.0" />
+                                            <Label fx:id="wednesdayLabel" layoutX="16.0" layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Wednesday" textFill="#a8a4a4">
+                                                <font>
+                                                    <Font name="American Typewriter" size="18.0" />
+                                                </font>
+                                            </Label>
+                                 <ProgressBar fx:id="wednesdayBar" layoutY="350.0" prefHeight="10.0" prefWidth="125.0" progress="0.0" />
+                                        </children>
+                                    </Pane>
+                                    <Pane fx:id="thursday" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0">
+                                        <children>
+                                 <ProgressBar fx:id="thursdayBar" layoutX="-1.0" layoutY="350.0" prefHeight="10.0" prefWidth="125.0" progress="0.0" />
+                                            <ListView fx:id="thursdayList" layoutY="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="326.0" prefWidth="125.0" />
+                                            <Label fx:id="thursdayLabel" layoutX="19.0" layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Thursday" textFill="#a8a4a4">
+                                                <font>
+                                                    <Font name="American Typewriter" size="18.0" />
+                                                </font>
+                                            </Label>
+                                        </children>
+                                    </Pane>
+                                    <Pane fx:id="friday" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0">
+                                        <children>
+                                            <ListView fx:id="fridayList" layoutY="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="326.0" prefWidth="125.0" />
+                                            <Label fx:id="fridayLabel" layoutX="31.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Friday" textFill="#a8a4a4">
+                                                <font>
+                                                    <Font name="American Typewriter" size="18.0" />
+                                                </font>x
+                                            </Label>
+                                 <ProgressBar fx:id="fridayBar" layoutX="-1.0" layoutY="350.0" prefHeight="10.0" prefWidth="125.0" progress="0.0" />
+                                        </children>
+                                    </Pane>
+                                    <Pane fx:id="saturday" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0">
+                                        <children>
+                                            <ListView fx:id="saturdayList" layoutY="22.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="326.0" prefWidth="124.0" />
+                                            <Label fx:id="saturdayLabel" layoutX="26.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Saturday" textFill="#a8a4a4">
+                                                <font>
+                                                    <Font name="American Typewriter" size="18.0" />
+                                                </font>
+                                            </Label>
+                                 <ProgressBar layoutX="1.0" layoutY="350.0" prefHeight="10.0" prefWidth="122.0" progress="0.0" />
+                                        </children>
+                                    </Pane>
+                                </children>
+                            </HBox>
+                            <Pane fx:id="titlePane" cache="true" layoutX="117.0" layoutY="38.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mouseTransparent="true" prefHeight="60.0" prefWidth="449.0" />
+                            <ToolBar fx:id="menuBat" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="1257.0">
+                                <items>
+                                    <Button fx:id="save" defaultButton="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="26.0" prefWidth="57.0" text="Save">
+                                        <font>
+                                            <Font name="American Typewriter" size="13.0" />
+                                        </font>
+                                    </Button>
+                                    <MenuButton fx:id="scheduleSomething" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Schedule Something">
+                                        <items>
+                                            <MenuItem fx:id="newEvent" mnemonicParsing="false" text="New Event" />
+                                            <MenuItem fx:id="newTask" mnemonicParsing="false" text="New Task" />
+                                        </items>
+                                        <font>
+                                            <Font name="American Typewriter" size="13.0" />
+                                        </font>
+                                    </MenuButton>
+                                    <Button fx:id="newWeek" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="New Week">
+                                        <font>
+                                            <Font name="American Typewriter" size="13.0" />
+                                        </font>
+                                    </Button>
+                                    <Button fx:id="openWeek" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Open Week">
+                                        <font>
+                                            <Font name="American Typewriter" size="13.0" />
+                                        </font>
+                                    </Button>
+                           <Button fx:id="settings" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Settings">
+                              <font>
+                                 <Font name="American Typewriter" size="13.0" />
+                              </font>
+                           </Button>
+                           <Button fx:id="fullScreen" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="39.0" prefWidth="99.0" text="Full Screen">
+                              <font>
+                                 <Font name="American Typewriter" size="13.0" />
+                              </font>
+                           </Button>
+                           <Button fx:id="undo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="39.0" prefWidth="63.0" text="Undo">
+                              <font>
+                                 <Font name="American Typewriter" size="13.0" />
+                              </font>
+                           </Button>
+                                </items>
+                            </ToolBar>
+                            <AnchorPane fx:id="todoPane" layoutX="985.0" layoutY="116.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="376.0" prefWidth="146.0">
+                        <children>
+                                    <Label fx:id="todoLabel" alignment="CENTER" layoutX="-12.0" layoutY="-21.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="TO-DO" textAlignment="CENTER">
+                                        <font>
+                                            <Font name="American Typewriter" size="36.0" />
+                                        </font>
+                                    </Label>
+                           <ProgressBar fx:id="toDoProgress" layoutX="-15.0" layoutY="362.0" prefHeight="20.0" prefWidth="266.0" progress="0.0">
+                              <opaqueInsets>
+                                 <Insets top="1.0" />
+                              </opaqueInsets>
+                           </ProgressBar>
+                                    <ListView fx:id="todoList" layoutX="-13.0" layoutY="23.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="328.0" prefWidth="265.0" />
+                        </children>
+                            </AnchorPane>
+                     <TextArea fx:id="quoteArea" layoutX="37.0" layoutY="575.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="146.0" prefWidth="590.0" promptText="Words to live by...">
+                        <font>
+                           <Font name="American Typewriter" size="16.0" />
+                        </font>
+                     </TextArea>
+                     <Label fx:id="quoteLabel" layoutX="39.0" layoutY="530.0" prefHeight="42.0" prefWidth="343.0" text="Quotes and Notes">
+                        <font>
+                           <Font name="American Typewriter" size="36.0" />
+                        </font>
+                     </Label>
+                              <Label fx:id="weekTitle" alignment="CENTER" layoutX="480.0" layoutY="66.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="This Week">
+                                  <font>
+                                      <Font name="American Typewriter" size="48.0" />
+                                  </font>
+                              </Label>
+                     <Label layoutX="4.0" layoutY="476.0" prefHeight="43.0" prefWidth="102.0" text="Tasks Remaining:" textFill="#c6c6c6" wrapText="true" />
+                     <Label fx:id="sundayRemaining" layoutX="147.0" layoutY="489.0" text="0" textFill="#c3c3c3" />
+                     <Label fx:id="mondayRemaining" layoutX="272.0" layoutY="489.0" text="0" textFill="#c3c3c3" />
+                     <Label fx:id="tuesdayRemaining" layoutX="402.0" layoutY="490.0" text="0" textFill="#c3c3c3" />
+                     <Label fx:id="wednesdayRemaining" layoutX="534.0" layoutY="490.0" text="0" textFill="#c3c3c3" />
+                     <Label fx:id="thursdayRemaining" layoutX="661.0" layoutY="492.0" text="0" textFill="#c3c3c3" />
+                     <Label fx:id="fridayRemaining" layoutX="794.0" layoutY="491.0" text="0" textFill="#c3c3c3" />
+                     <Label fx:id="saturdayRemaining" layoutX="920.0" layoutY="490.0" text="0" textFill="#c3c3c3" />
+                        </children>
+                    </AnchorPane>
+                </children>
+            </AnchorPane>
+        </children>
+    </VBox>
+</Scene>

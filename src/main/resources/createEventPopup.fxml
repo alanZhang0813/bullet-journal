@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <root>
+      <AnchorPane prefHeight="305.0" prefWidth="290.0">
+         <children>
+            <Label fx:id="createAnEvent" layoutX="72.0" layoutY="12.0" text="Create Event" textFill="#0d0d0d">
+               <font>
+                  <Font name="American Typewriter" size="24.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="enterEventDescription" layoutX="29.0" layoutY="93.0" prefHeight="79.0" prefWidth="235.0" promptText="Enter an event description:" wrapText="true" />
+            <TextField fx:id="enterEventTitle" layoutX="28.0" layoutY="50.0" prefHeight="26.0" prefWidth="236.0" promptText="Enter an event title:" />
+            <MenuButton fx:id="chooseAdayEvent" layoutX="90.0" layoutY="267.0" mnemonicParsing="false" text="Choose a day:">
+               <items>
+                  <MenuItem fx:id="mondayEvent" mnemonicParsing="false" text="Monday" />
+                  <MenuItem fx:id="tuesdayEvent" mnemonicParsing="false" text="Tuesday" />
+                  <MenuItem fx:id="wednesdayEvent" mnemonicParsing="false" text="Wednesday" />
+                  <MenuItem fx:id="thursdayEvent" mnemonicParsing="false" text="Thursday" />
+                  <MenuItem fx:id="fridayEvent" mnemonicParsing="false" text="Friday" />
+                  <MenuItem fx:id="saturdayEvent" mnemonicParsing="false" text="Saturday" />
+                  <MenuItem fx:id="sundayEvent" mnemonicParsing="false" text="Sunday" />
+               </items>
+               <font>
+                  <Font name="American Typewriter" size="13.0" />
+               </font>
+            </MenuButton>
+            <Label layoutX="42.0" layoutY="197.0" text="Start Time:" />
+            <AnchorPane fx:id="startTimeInfo" layoutX="84.0" layoutY="145.0" />
+            <Label layoutX="51.0" layoutY="237.0" text="Duration:" />
+            <AnchorPane fx:id="durationInfo" layoutX="74.0" layoutY="170.0" />
+            <Button fx:id="doneButton" mnemonicParsing="false" text="Done" />
+            <TextField fx:id="enterEventHour" layoutX="113.0" layoutY="191.0" prefHeight="26.0" prefWidth="32.0" promptText="00" />
+            <TextField fx:id="enterEventMinute" layoutX="160.0" layoutY="191.0" prefHeight="27.0" prefWidth="34.0" promptText="00" />
+            <Label layoutX="149.0" layoutY="193.0" text=":">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="enterDurationMinute" layoutX="170.0" layoutY="230.0" prefHeight="26.0" prefWidth="34.0" promptText="00" />
+            <Label layoutX="207.0" layoutY="238.0" text="mins" />
+            <TextField fx:id="enterDurationHour" layoutX="111.0" layoutY="230.0" prefHeight="26.0" prefWidth="33.0" promptText="00" />
+            <Label layoutX="146.0" layoutY="238.0" text="hrs" />
+         </children>
+      </AnchorPane>
+   </root>
+</Scene>
